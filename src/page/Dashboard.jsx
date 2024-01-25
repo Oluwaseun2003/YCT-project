@@ -1,23 +1,24 @@
 import NavigationBar from "../components/NavigationBar";
 import HomeDashboard from "../components/HomeDashboard";
+import { useState } from "react";
 
 const Dashboard = ({ setLoggedIn }) => {
-//   const handleLogout = () => {
-//     setLoggedIn(false);
-//   };
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  //   const handleLogout = () => {
+  //     setLoggedIn(false);
+  //   };
 
   return (
     <>
-    <div className="bg-green-700">
-       <NavigationBar />
+      <div className="w-full flex bg-green-700">
+        <NavigationBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
 
-    <main>
-      <HomeDashboard />
-    </main>
-      
+        <main className={`flex ${isExpanded ? "grow" : ""}`}>
+          <HomeDashboard isExpanded={isExpanded} />
+        </main>
       </div>
     </>
-    
   );
 };
 

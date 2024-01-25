@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import logo from "../assets/logo.png";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { FaRegIdCard } from "react-icons/fa";
@@ -7,6 +8,8 @@ import { MdOutlineCoPresent, MdOutlineLibraryBooks } from "react-icons/md";
 import { PiExam } from "react-icons/pi";
 import { FaHotel } from "react-icons/fa6";
 import { IoIosSettings } from "react-icons/io";
+import { FaAngleRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const navLinks = [
@@ -48,33 +51,54 @@ const navLinks = [
   },
 ];
 
-const NavigationBar = () => {
-    const [activeNavIndex, setActiveNavIndex] = useState(0);
-  
-    return (
-      <div className="px-3 py-7 flex flex-col w-1/5 bg-shades-white h-screen">
-        <div className="flex items-center justify-center">
-          <img src={logo} alt="logo" className="w-[79px] h-[76]" />
-        </div>
-        <div className="mt-9 flex flex-col space-y-8 gap-0">
-          {navLinks.map((item, index) => (
-            <div
-              key={index}
-              className={
-                "flex items-center space-x-3 px-2" +
-                (activeNavIndex === index
-                  ? " bg-green-base text-shades-white font-medium z-10 rounded p-2"
-                  : "")
-              }
-              onClick={() => setActiveNavIndex(index)}
-            >
-              <item.icon className="w-4" />
-              <span className="text-[16px]">{item?.name}</span>
-            </div>
-          ))}
-        </div>
+const variants = {
+  expanded: { width: "300px" },
+  nonExpanded: { width: "100px" },
+};
+
+const NavigationBar = ({ isExpanded, setIsExpanded }) => {
+  const [activeNavIndex, setActiveNavIndex] = useState(0);
+
+  return (
+    <motion.div
+      animate={isExpanded ? "expanded" : "nonExpanded"}
+      variants={variants}
+      className="px-3 py-7 flex flex-col w-[272px] bg-shades-white h-screen relative"
+    >
+      <div className="p-2 flex items-center justify-center">
+        <img src={logo} alt="logo" className="w-[79px] h-[76]" />
       </div>
-    );
-  };
-  
-  export default NavigationBar;
+
+      <div
+        onClick={() => setIsExpanded(!isExpanded)}
+        className="w-5 h-5 bg-green-base rounded-full absolute -right-[10px] top-12 flex items-center justify-center"
+      >
+        <FaAngleRight className="text-shades-white w-2" />
+      </div>
+
+      <div className="mt-9 flex flex-col space-y-6 gap-0">
+        {navLinks.map((item, index) => (
+          <div
+            key={index}
+            className={
+              "flex items-center space-x-3 px-4 " +
+              (activeNavIndex === index
+                ? " bg-green-base text-shades-white font-medium z-10 rounded p-3"
+                : "text-grey-60")
+            }
+            onClick={() => setActiveNavIndex(index)}
+          >
+            <item.icon
+              className={isExpanded ? "text-[20px]" : "text-[20px] w-20"}
+            />
+            <span className={isExpanded ? "block" : "hidden"}>
+              {item?.name}
+            </span>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+export default NavigationBar;
