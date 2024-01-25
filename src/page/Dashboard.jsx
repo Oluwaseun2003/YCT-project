@@ -1,5 +1,6 @@
 import NavigationBar from "../components/NavigationBar";
 import HomeDashboard from "../components/HomeDashboard";
+import Navbar from "../components/NavBar";
 import { useState } from "react";
 
 const Dashboard = ({ setLoggedIn }) => {
@@ -11,12 +12,17 @@ const Dashboard = ({ setLoggedIn }) => {
 
   return (
     <>
-      <div className="w-full flex bg-green-700">
+    
+      <div className="w-full flex bg-grey-20">
         <NavigationBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
 
-        <main className={`flex ${isExpanded ? "grow" : ""}`}>
-          <HomeDashboard isExpanded={isExpanded} />
-        </main>
+        <div className={`flex flex-col ${isExpanded ? "grow" : "w-full"}`}>
+          <Navbar />
+
+          <main className="flex">
+            <HomeDashboard isExpanded={isExpanded} />
+          </main>
+        </div>
       </div>
     </>
   );

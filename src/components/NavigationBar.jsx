@@ -71,7 +71,7 @@ const NavigationBar = ({ isExpanded, setIsExpanded }) => {
 
       <div
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-5 h-5 bg-green-base rounded-full absolute -right-[10px] top-12 flex items-center justify-center"
+        className="w-5 h-5 bg-green-base rounded-full absolute -right-[10px] top-[115px] flex items-center justify-center"
       >
         <FaAngleRight className="text-shades-white w-2" />
       </div>

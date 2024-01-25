@@ -27,6 +27,8 @@ export default {
       },
       'grey': {
         '60': '#667185',
+        '50': '#F9FAFB',
+        '20': '#F7F9FC',
       },
     },
     extend: {
