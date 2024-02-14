@@ -1,4 +1,4 @@
-import NavigationBar from "../components/NavigationBar";
+import SideBar from "../components/SideBar";
 import HomeDashboard from "../components/HomeDashboard";
 import Navbar from "../components/NavBar";
 import { useState } from "react";
@@ -12,11 +12,10 @@ const Dashboard = ({ setLoggedIn }) => {
 
   return (
     <>
-    
       <div className="w-full flex bg-grey-20">
-        <NavigationBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+        <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
 
-        <div className={`flex flex-col ${isExpanded ? "grow" : "w-full"}`}>
+        <div className="flex flex-col w-full">
           <Navbar />
 
           <main className="flex">

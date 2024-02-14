@@ -20,11 +20,11 @@ const LoginPage = ({ setLoggedIn }) => {
   return (
     <div className="relative w-full min-h-screen bg-cover bg-center bg-loginbg">      
       <div className="flex justify-center items-center">
-        <img src={logo} alt="logo" className="w-[79px] h-[76] m-10" />
+        <img src={logo} alt="logo" className="w-[79px] h-[76] m-5" />
       </div>
       <div className="flex justify-center items-center h-full mb-5">
-        <form className="max-w-[464px] w-full mx-auto bg-shades-white px-8 py-10 rounded-2xl">
-          <div className="flex flex-col justify-center items-center py-2 text-center">
+        <form className="max-w-[464px] w-full mx-auto bg-shades-white px-8 py-7 rounded-2xl">
+          <div className="flex flex-col justify-center items-center pb-2 text-center">
             <h1 className="text-2xl font-bold text-shades-black">
               Sign in to your student portal
             </h1>

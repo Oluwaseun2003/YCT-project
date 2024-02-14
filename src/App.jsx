@@ -1,23 +1,40 @@
-import { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './page/LoginPage';
 import Dashboard from './page/Dashboard';
+import BioData from './components/BioData';
+import Advisor from './components/Advisor';
+import Payments from './components/Payments';
+import CourseRegistration from './components/CourseRegistration';
+import Examination from './components/Examination';
+import HostelManagement from './components/HostelManagement';
+import ResultChecker from './components/ResultChecker';
+import Settings from './components/Settings';
+import EditBioData from './components/EditBioData';
 
 const App = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = React.useState(false);
 
   return (
     <Router>
       <Routes>
         <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
-        
+
         {loggedIn ? (
-          <Route path="/dashboard" element={<Dashboard setLoggedIn={setLoggedIn} />} /> 
+          <Route path="/dashboard" element={<Dashboard setLoggedIn={setLoggedIn} />} />
         ) : (
           <Route path="*" element={<Navigate to="/login" />} />
         )}
-        
-        <Route path="*" element={<Navigate to="/login" />} />
+
+        <Route path="/bio-data" element={<BioData />} />
+        <Route path="/advisor" element={<Advisor />} />
+        <Route path="/payments" element={<Payments />} />
+        <Route path="/course-registration" element={<CourseRegistration />} />
+        <Route path="/examination" element={<Examination />} />
+        <Route path="/hostel-management" element={<HostelManagement />} />
+        <Route path="/result-checker" element={<ResultChecker />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/edit-biodata" element={<EditBioData />} />
       </Routes>
     </Router>
   );
