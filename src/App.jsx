@@ -11,6 +11,8 @@ import HostelManagement from './components/HostelManagement';
 import ResultChecker from './components/ResultChecker';
 import Settings from './components/Settings';
 import EditBioData from './components/EditBioData';
+import AdvisorChat from './components/AdvisorChat';
+import ExamAllocation from './components/ExamAllocation';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = React.useState(false);
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/result-checker" element={<ResultChecker />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/edit-biodata" element={<EditBioData />} />
+        <Route path="/advisor-chatbot" element={<AdvisorChat />} />
+        <Route path="/exam-allocation" element={<ExamAllocation />} />
       </Routes>
     </Router>
   );

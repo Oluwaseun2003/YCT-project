@@ -65,7 +65,7 @@ const EditBioData = ({ setLoggedIn }) => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="flex items-center font-bold text-[16px] px-6 py-4 bg-grey-40 rounded-[6px]">
+                  <div className="flex items-center font-bold text-[16px] px-6 py-4 bg-grey-40 rounded-[6px] cursor-pointer">
                     Change profile picture
                   </div>
                 </div>

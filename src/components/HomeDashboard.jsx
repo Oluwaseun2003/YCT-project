@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 import profilePicture from "../assets/profile picture.jpg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import dicovercircle from "../assets/discover-circle.png";
@@ -266,10 +267,10 @@ const HomeDashboard = ({ isExpanded }) => {
 
             <div className="flex flex-col w-full mb-2">
               <div className="border-b border-grey-30 my-2 h-full"></div>
-              <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
+              <Link to="/edit-biodata" className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
                 Edit biodata here
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
-              </div>
+              </Link>
             </div>
           </div>
 

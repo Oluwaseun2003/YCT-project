@@ -21,7 +21,7 @@ const navLinks = [
   { name: 'Advisor', icon: SiHomeadvisor, path: '/advisor' },
   { name: 'Payments & Receipt', icon: MdPayment, path: '/payments' },
   { name: 'Course Registration', icon: MdOutlineCoPresent, path: '/course-registration' },
-  { name: 'Examination', icon: PiExam, path: '/examination' },
+  { name: 'Examination Allocation', icon: PiExam, path: '/examination' },
   { name: 'Hostel Management', icon: FaHotel, path: '/hostel-management' },
   { name: 'Result Checker', icon: MdOutlineLibraryBooks, path: '/result-checker' },
   { name: 'Settings', icon: IoIosSettings, path: '/settings' },
