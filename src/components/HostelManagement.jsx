@@ -1,7 +1,9 @@
 
+import NoPage from "./NoPage"
+
 const HostelManagement = () => {
   return (
-    <div>HostelManagement</div>
+    <NoPage />
   )
 }
 

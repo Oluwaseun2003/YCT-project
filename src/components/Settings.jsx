@@ -1,7 +1,8 @@
+import NoPage from "./NoPage"
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <NoPage />
   )
 }
 

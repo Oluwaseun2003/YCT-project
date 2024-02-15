@@ -1,7 +1,9 @@
 
+import NoPage from "./NoPage"
+
 const ResultChecker = () => {
   return (
-    <div>ResultChecker</div>
+    <NoPage />
   )
 }
 

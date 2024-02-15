@@ -12,9 +12,11 @@ const AdvisorChat = ({ setLoggedIn }) => {
 
   const botResponses = [
     "Hello! I am a simulated bot. How can I help you?",
-    "How that one tak concern me?",
-    "You no go like thief",
-    "I fit buy gun for you, that's the only thing I can offer you. So get tf",
+    "Hello! I am a simulated bot. How can I help you?",
+    "Hello! I am a simulated bot. How can I help you?",
+    "Hello! I am a simulated bot. How can I help you?",
+    "Hello! I am a simulated bot. How can I help you?",
+
   ];
 
   const handleInputChange = (e) => {
