@@ -23,9 +23,9 @@ const LoginPage = ({ setLoggedIn }) => {
         <img src={logo} alt="logo" className="w-[79px] h-[76] m-5" />
       </div>
       <div className="flex justify-center items-center h-full mb-5">
-        <form className="max-w-[464px] w-full mx-auto bg-shades-white px-8 py-7 rounded-2xl">
+        <form className="max-w-[340px] lg:max-w-[464px] w-full mx-auto bg-shades-white px-8 py-7 rounded-2xl">
           <div className="flex flex-col justify-center items-center pb-2 text-center">
-            <h1 className="text-2xl font-bold text-shades-black">
+            <h1 className="text-lg lg:text-2xl font-bold text-shades-black">
               Sign in to your student portal
             </h1>
             <p className="text-[14px] mt-2 mb-4 text-[#645D5D]">
@@ -36,7 +36,7 @@ const LoginPage = ({ setLoggedIn }) => {
           <div className="flex flex-col mb-4 text-[14px] font-medium">
             <label>Enter Your Matric Number</label>
             <input
-              className="border border-[#D0D5DD] rounded-lg relative bg-shades-white p-4 mt-2"
+              className="border border-[#D0D5DD] rounded-lg relative bg-shades-white p-2 lg:p-4 mt-2"
               type="text"
               value={matricNumber}
               onChange={(e) => setMatricNumber(e.target.value)}
@@ -45,7 +45,7 @@ const LoginPage = ({ setLoggedIn }) => {
           <div className="relative flex flex-col text-[14px] font-medium">
             <label>Enter Your Password</label>
             <input
-              className="border border-[#D0D5DD] rounded-lg relative bg-shades-white p-4 mt-2"
+              className="border border-[#D0D5DD] rounded-lg relative bg-shades-white p-2 lg:p-4 mt-2"
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -74,7 +74,7 @@ const LoginPage = ({ setLoggedIn }) => {
         </form>
       </div>
       <div className="flex justify-center items-center">
-        <p className="max-w-[428px] w-full mx-auto bg-shades-white text-[14px] text-shades-black text-center px-6 py-4 rounded-[30px]">
+        <p className="max-w-[350px] lg:max-w-[428px] w-full mx-auto bg-shades-white text-[14px] text-shades-black text-center px-6 py-4 rounded-full flex flex-col gap-1 lg:block">
         Are you a new student? <span className="font-medium text-green-base hover:text-green-600 cursor-pointer">Login with Registration number</span>
         </p>
       </div>

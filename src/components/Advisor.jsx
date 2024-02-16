@@ -28,11 +28,16 @@ const Advisor = ({ setLoggedIn }) => {
                   Ask your academia advisor anything?
                 </div>
                 <div className="w-full flex place-content-center mb-5">
-                  <input
+                <input
                     type="text"
                     placeholder="Enter your question here"
-                    className="w-[535px] border-2 border-grey-30 rounded-[8px] p-3"
+                    className="w-[480px] border-2 border-grey-30 rounded-[8px] p-3"
                   />
+                  <button
+                    className="ml-3 px-4 py-2 bg-green-500 text-shades-white rounded-[8px] hover:bg-green-700"
+                  >
+                    Ask
+                  </button>
                 </div>
 
                 <div className="w-full flex items-center gap-7 mt-5 px-20">
@@ -44,12 +49,10 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                          Project Advice
+                        GPA Guardian
                         </div>
                         <div className="text-[12px]">
-                          Get the information you need to get through student
-                          clearance quickly and easily.
-                        </div>
+                        Elevate your GPA with personalized insights. Start now to take charge of your academic success.                        </div>
                       </div>
                     </div>
 
@@ -70,12 +73,10 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                          Online Tutor
+                          E-Learning
                         </div>
                         <div className="text-[12px]">
-                          Get the information you need to get through student
-                          clearance quickly and easily.
-                        </div>
+                        Empower your learning journey with a wealth of online materials.                        </div>
                       </div>
                     </div>
 
@@ -96,11 +97,10 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                          Fun
+                        Academic Archive
                         </div>
                         <div className="text-[12px]">
-                          Get the information you need to get through student
-                          clearance quickly and easily.
+                        Reflect on your academic journey - past courses, grades, and achievements. 
                         </div>
                       </div>
                     </div>
@@ -141,12 +141,12 @@ const Advisor = ({ setLoggedIn }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="flex">
+                    <Link to="/advisor-chatbot" className="flex">
                       <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-white ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
                         Continue
                         <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
                       </div>
-                    </div>
+                    </Link>
                   </div>
 
                   <div className="flex justify-between items-start p-5 bg-shades-white rounded-2xl h-[100px] w-[535px]">
@@ -163,20 +163,19 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                          Biodata
+                        Academic Calendar
                         </div>
                         <div className="text-[12px] text-shades-black">
-                          This part of your biodata provides essential
-                          information about your identity.
+                        Stay organized with the Academic Calendar. Plan your schedule and manage deadlines.
                         </div>
                       </div>
                     </div>
-                    <Link to="/advisor-chatbot" className="flex">
+                    <div className="flex">
                       <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
                         Continue
                         <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
                       </div>
-                    </Link>
+                    </div>
                   </div>
 
                   <div className="flex justify-between items-start p-5 mt-5 bg-shades-white rounded-2xl h-[100px] w-[535px]">
@@ -193,11 +192,10 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                          Biodata
+                        Class Adviser
                         </div>
                         <div className="text-[12px] text-shades-black">
-                          This part of your biodata provides essential
-                          information about your identity.
+                        Connect with your dedicated advisor, schedule meetings, and receive tailored support. 
                         </div>
                       </div>
                     </div>
