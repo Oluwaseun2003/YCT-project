@@ -33,6 +33,7 @@ export default {
         20: '#F7F9FC',
         30: '#F0F2F5',
         40: '#E4E7EC',
+        'base': '#98A2B3',
       },
     },
     extend: {

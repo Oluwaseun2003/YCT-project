@@ -1,5 +1,5 @@
-import SideBar from "./SideBar";
-import Navbar from "./NavBar";
+import SideBar from "../components/SideBar";
+import Navbar from "../components/NavBar";
 import { useState } from "react";
 
 const ExamAllocation = ({ setLoggedIn }) => {

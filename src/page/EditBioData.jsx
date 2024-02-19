@@ -167,27 +167,27 @@ const EditBioData = ({ setLoggedIn }) => {
                       "Enter your full name"
                     )}
                     {renderInputField(
-                      "Programme Type",
-                      "programmeType",
-                      "Enter your Programme Type"
+                      "Phone",
+                      "phone",
+                      "Enter your phone number"
                     )}
                   </div>
 
                   <div className="flex flex-1 flex-col w-full">
                     {renderInputField(
-                      "Matric Number",
-                      "matricNumber",
-                      "Enter your Matric Number"
+                      "Residential Address",
+                      "residentialAddress",
+                      "Enter your Residential Address"
                     )}
                     {renderInputField(
-                      "Session",
-                      "session",
-                      "Enter your Session Year"
+                      "Email",
+                      "email",
+                      "Enter your email"
                     )}
                   </div>
 
                 </form>
-                <div className="flex items-center font-bold text-sm px-4 py-2 bg-green-100 rounded-[6px] w-16 mt-5">
+                <div className="flex items-center font-bold text-sm px-4 text-shades-white py-2 bg-green-100 rounded-[6px] w-16 mt-5">
                     Print
                 </div>
               </div>

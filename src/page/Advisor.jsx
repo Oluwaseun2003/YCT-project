@@ -28,19 +28,46 @@ const Advisor = ({ setLoggedIn }) => {
                   Ask your academia advisor anything?
                 </div>
                 <div className="w-full flex place-content-center mb-5">
-                <input
+                  <input
                     type="text"
                     placeholder="Enter your question here"
                     className="w-[480px] border-2 border-grey-30 rounded-[8px] p-3"
                   />
-                  <button
-                    className="ml-3 px-4 py-2 bg-green-500 text-shades-white rounded-[8px] hover:bg-green-700"
-                  >
+                  <button className="ml-3 px-4 py-2 bg-green-500 text-shades-white rounded-[8px] hover:bg-green-700">
                     Ask
                   </button>
                 </div>
 
                 <div className="w-full flex items-center gap-7 mt-5 px-20">
+                  <Link
+                    to="/gpa-guardian"
+                    className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full"
+                  >
+                    <div className="flex flex-1 items-start px-5 pt-5">
+                      <div className="mr-4">
+                        <div className="w-[16px] h-[16px] border-2 border-green-800 rounded-full"></div>
+                      </div>
+
+                      <div className="flex flex-col">
+                        <div className="font-bold text-shades-black text-[14px]">
+                          GPA Guardian
+                        </div>
+                        <div className="text-[12px]">
+                          Elevate your GPA with personalized insights. Start now
+                          to take charge of your academic success.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col w-full mb-2">
+                      <div className="border-b border-grey-30 my-2 h-full"></div>
+                      <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[55px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
+                        Get started now
+                        <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
+                      </div>
+                    </div>
+                  </Link>
+
                   <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
                     <div className="flex flex-1 items-start px-5 pt-5">
                       <div className="mr-4">
@@ -49,10 +76,12 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                        GPA Guardian
+                          Course Materials
                         </div>
                         <div className="text-[12px]">
-                        Elevate your GPA with personalized insights. Start now to take charge of your academic success.                        </div>
+                          Empower your learning journey with a wealth of online
+                          materials.{" "}
+                        </div>
                       </div>
                     </div>
 
@@ -73,34 +102,11 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                          E-Learning
+                          Academic Archive
                         </div>
                         <div className="text-[12px]">
-                        Empower your learning journey with a wealth of online materials.                        </div>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col w-full mb-2">
-                      <div className="border-b border-grey-30 my-2 h-full"></div>
-                      <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[55px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
-                        Get started now
-                        <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
-                    <div className="flex flex-1 items-start px-5 pt-5">
-                      <div className="mr-4">
-                        <div className="w-[16px] h-[16px] border-2 border-green-800 rounded-full"></div>
-                      </div>
-
-                      <div className="flex flex-col">
-                        <div className="font-bold text-shades-black text-[14px]">
-                        Academic Archive
-                        </div>
-                        <div className="text-[12px]">
-                        Reflect on your academic journey - past courses, grades, and achievements. 
+                          Reflect on your academic journey - past courses,
+                          grades, and achievements.
                         </div>
                       </div>
                     </div>
@@ -119,7 +125,10 @@ const Advisor = ({ setLoggedIn }) => {
                 </div>
 
                 <div className="w-full flex flex-col items-center place-content-center">
-                  <div className="flex justify-between items-start p-5 mb-5 bg-green-800 rounded-2xl h-[100px] w-[535px]">
+                  <Link
+                    to="/advisor-chatbot"
+                    className="flex justify-between items-start p-5 mb-5 bg-green-800 rounded-2xl h-[100px] w-[535px]"
+                  >
                     <div className="flex">
                       <div className="mr-4">
                         <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -141,15 +150,18 @@ const Advisor = ({ setLoggedIn }) => {
                         </div>
                       </div>
                     </div>
-                    <Link to="/advisor-chatbot" className="flex">
+                    <div className="flex">
                       <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-white ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
                         Continue
                         <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
                       </div>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
 
-                  <div className="flex justify-between items-start p-5 bg-shades-white rounded-2xl h-[100px] w-[535px]">
+                  <Link
+                    to="/class-advisor"
+                    className="flex justify-between items-start p-5 bg-shades-white rounded-2xl h-[100px] w-[535px]"
+                  >
                     <div className="flex">
                       <div className="mr-4">
                         <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -163,10 +175,11 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                        Academic Calendar
+                          Class Adviser
                         </div>
                         <div className="text-[12px] text-shades-black">
-                        Stay organized with the Academic Calendar. Plan your schedule and manage deadlines.
+                          Connect with your dedicated advisor, schedule
+                          meetings, and receive tailored support.
                         </div>
                       </div>
                     </div>
@@ -176,9 +189,9 @@ const Advisor = ({ setLoggedIn }) => {
                         <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
                       </div>
                     </div>
-                  </div>
+                  </Link>
 
-                  <div className="flex justify-between items-start p-5 mt-5 bg-shades-white rounded-2xl h-[100px] w-[535px]">
+                  <Link to="/academic-calendar" className="flex justify-between items-start p-5 mt-5 bg-shades-white rounded-2xl h-[100px] w-[535px]">
                     <div className="flex">
                       <div className="mr-4">
                         <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -192,10 +205,11 @@ const Advisor = ({ setLoggedIn }) => {
 
                       <div className="flex flex-col">
                         <div className="font-bold text-shades-black text-[14px]">
-                        Class Adviser
+                          Academic Calendar
                         </div>
                         <div className="text-[12px] text-shades-black">
-                        Connect with your dedicated advisor, schedule meetings, and receive tailored support. 
+                          Stay organized with the Academic Calendar. Plan your
+                          schedule and manage deadlines.
                         </div>
                       </div>
                     </div>
@@ -205,7 +219,7 @@ const Advisor = ({ setLoggedIn }) => {
                         <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>

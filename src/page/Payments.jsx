@@ -1,9 +1,9 @@
-import SideBar from "./SideBar";
-import Navbar from "./NavBar";
+import SideBar from "../components/SideBar";
+import Navbar from "../components/NavBar";
 import { useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import dicovercircle from "../assets/discover-circle.png";
-import PaymentModal from "./PaymentModal";
+import PaymentModal from "../components/PaymentModal";
 
 const Payments = ({ setLoggedIn }) => {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -174,7 +174,7 @@ const Payments = ({ setLoggedIn }) => {
           </main>
         </div>
       </div>
-      <PaymentModal isOpen={isPaymentModalOpen} onClose={closePaymentModal} />
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={closePaymentModal} name="Payment" fee="School fee" />
 
     </>
   );

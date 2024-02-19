@@ -2,32 +2,41 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './page/LoginPage';
 import Dashboard from './page/Dashboard';
-import BioData from './components/BioData';
-import Advisor from './components/Advisor';
-import Payments from './components/Payments';
-import CourseRegistration from './components/CourseRegistration';
-import Examination from './components/Examination';
-import HostelManagement from './components/HostelManagement';
-import ResultChecker from './components/ResultChecker';
-import Settings from './components/Settings';
-import EditBioData from './components/EditBioData';
-import AdvisorChat from './components/AdvisorChat';
-import ExamAllocation from './components/ExamAllocation';
+import AdminDashboard from './page/AdminDashboard';
+import BioData from './page/BioData';
+import Advisor from './page/Advisor';
+import Payments from './page/Payments';
+import CourseRegistration from './page/CourseRegistration';
+import Examination from './page/Examination';
+import HostelManagement from './page/HostelManagement';
+import ResultChecker from './page/ResultChecker';
+import Settings from './page/Settings';
+import EditBioData from './page/EditBioData';
+import AdvisorChat from './page/AdvisorChat';
+import ExamAllocation from './page/ExamAllocation';
+import GPAGuardian from './page/GPAGuardian';
+import ClassAdvisor from './page/ClassAdvisor';
+import AcademicCalendar from './page/AcademicCalendar';
+import Results from './page/Results';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = React.useState(false);
+  const [selectedRole, setSelectedRole] = React.useState("student");
 
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
+      <Route path="/login" element={(<Login setLoggedIn={setLoggedIn} setSelectedRole={setSelectedRole} />)} />
 
-        {loggedIn ? (
-          <Route path="/dashboard" element={<Dashboard setLoggedIn={setLoggedIn} />} />
+        {loggedIn && selectedRole === "student" ? (
+          <Route path="/student-dashboard" element={<Dashboard setLoggedIn={setLoggedIn} />} />
+        ) : loggedIn && selectedRole === "admin" ? (
+          <Route path="/admin-dashboard" element={<AdminDashboard setLoggedIn={setLoggedIn} />} />
         ) : (
           <Route path="*" element={<Navigate to="/login" />} />
         )}
 
+<Route path="/admin-dashboard" element={<AdminDashboard setLoggedIn={setLoggedIn} />} />
         <Route path="/bio-data" element={<BioData />} />
         <Route path="/advisor" element={<Advisor />} />
         <Route path="/payments" element={<Payments />} />
@@ -39,6 +48,10 @@ const App = () => {
         <Route path="/edit-biodata" element={<EditBioData />} />
         <Route path="/advisor-chatbot" element={<AdvisorChat />} />
         <Route path="/exam-allocation" element={<ExamAllocation />} />
+        <Route path="/gpa-guardian" element={<GPAGuardian />} />
+        <Route path="/class-advisor" element={<ClassAdvisor />} />
+        <Route path="/academic-calendar" element={<AcademicCalendar />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
     </Router>
   );

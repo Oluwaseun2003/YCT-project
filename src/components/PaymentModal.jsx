@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HiX } from "react-icons/hi";
 
-const PaymentModal = ({ isOpen, onClose }) => {
+const PaymentModal = ({ isOpen, onClose, name, fee }) => {
   const [paymentData, setPaymentData] = useState({
-    paymentFor: "School fees",
+    paymentFor: fee,
     paymentType: "Transfer",
     matricNumber: "F/ND/21/3210121",
     surname: "Oduneye",
@@ -33,7 +33,7 @@ const PaymentModal = ({ isOpen, onClose }) => {
     >
       <div className="bg-shades-white p-6 rounded-2xl w-[450px]">
         <div className="flex justify-between items-center mb-5">
-        <h2 className="text-lg font-bold text-green-200">Payment Portal</h2>
+        <h2 className="text-lg font-bold text-green-200">{name} Portal</h2>
 
           <button onClick={onClose}>
             <HiX className="text-grey-60" />

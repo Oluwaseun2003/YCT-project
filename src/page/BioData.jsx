@@ -75,13 +75,13 @@ const BioData = ({ setLoggedIn }) => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col w-full mb-2">
+                    <Link to="/edit-biodata" className="flex flex-col w-full mb-2">
                       <div className="border-b border-yellow-100 my-2 h-full"></div>
-                      <Link to="/edit-biodata" className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
+                      <div className="text-[14px] flex items-center font-semibold gap-3 text-shades-black ml-[84px] cursor-pointer transition-all duration-300 ease-in-out hover:text-yellow-500 hover:scale-105">
                         Get started now
                         <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
-                      </Link>
-                    </div>
+                      </div>
+                    </Link>
                   </div>
 
                   <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
