@@ -176,7 +176,7 @@ const HomeDashboard = ({ isExpanded }) => {
 
         <h1 className="mt-12 mb-4 font-bold text-[14px]">Quick Links</h1>
         <div className="w-full h-[110px] flex items-center gap-7  mt-5">
-          <div className="flex flex-1 flex-col  bg-green-800 rounded-2xl h-[150px] w-full">
+          <Link to="/advisor-chatbot" className="flex flex-1 flex-col  bg-green-800 rounded-2xl h-[150px] w-full">
             <div className="flex flex-1 items-start px-7 pr-[200px] pt-7">
               <div className="mr-4">
                 <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -206,9 +206,9 @@ const HomeDashboard = ({ isExpanded }) => {
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
+          <Link to="/exam-allocation" className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
             <div className="flex flex-1 items-start px-7 pr-[200px] pt-7">
               <div className="mr-4">
                 <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -238,11 +238,11 @@ const HomeDashboard = ({ isExpanded }) => {
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="w-full h-[110px] flex items-center gap-7  mt-[70px]">
-          <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
+          <Link to="/bio-data" className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
             <div className="flex flex-1 items-start px-7 pr-[200px] pt-7">
               <div className="mr-4">
                 <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -272,9 +272,9 @@ const HomeDashboard = ({ isExpanded }) => {
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
               </Link>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
+          <Link to="/payments" className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
             <div className="flex flex-1 items-start px-7 pr-[200px] pt-7">
               <div className="mr-4">
                 <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -303,10 +303,10 @@ const HomeDashboard = ({ isExpanded }) => {
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
               </div>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="w-full h-[110px] flex items-center gap-7 mt-[70px] mb-5">
-          <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
+          <Link to="/course-registration" className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
             <div className="flex flex-1 items-start px-7 pr-[200px] pt-7">
               <div className="mr-4">
                 <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -336,9 +336,9 @@ const HomeDashboard = ({ isExpanded }) => {
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
+          <Link to="/results" className="flex flex-1 flex-col  bg-shades-white rounded-2xl h-[150px] w-full">
             <div className="flex flex-1 items-start px-7 pr-[200px] pt-7">
               <div className="mr-4">
                 <div className="w-[40px] h-[40px] border-2 border-grey-20 rounded-full overflow-hidden">
@@ -367,7 +367,7 @@ const HomeDashboard = ({ isExpanded }) => {
                 <HiArrowNarrowRight className="transition-all duration-300 ease-in-out transform scale-100 hover:scale-105" />
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

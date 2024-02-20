@@ -17,7 +17,7 @@ import { IoIosSettings, IoIosSearch } from 'react-icons/io';
 
 
 const navLinks = [
-  { name: 'Dashboard', icon: LuLayoutDashboard, path: '/dashboard' },
+  { name: 'Dashboard', icon: LuLayoutDashboard, path: '/student-dashboard' },
   { name: 'Bio Data', icon: FaRegIdCard, path: '/bio-data' },
   { name: 'Advisors', icon: SiHomeadvisor, path: '/advisor' },
   { name: 'Payments & Receipt', icon: MdPayment, path: '/payments' },
