@@ -10,11 +10,12 @@ const AdvisorChat = ({ setLoggedIn }) => {
   const [botResponseIndex, setBotResponseIndex] = useState(0);
 
   const botResponses = [
-    "Hello! I am a simulated bot. How can I help you?",
-    "Hello! I am a simulated bot. How can I help you?",
-    "Hello! I am a simulated bot. How can I help you?",
-    "Hello! I am a simulated bot. How can I help you?",
-    "Hello! I am a simulated bot. How can I help you?",
+    "Hello! I am a simulated bot. How can I assist you today?",
+    "To register for your course form, please follow these steps:\n1. Log in to your school portal using your credentials.\n2. Navigate to the 'Registration' or 'Student Services' section.\n3. Look for the option that says 'Course Registration' or something similar.\n4. Select the courses you wish to register for by following the prompts on the screen.\n5. Double-check your selected courses to ensure accuracy.\n6. Submit your course registration.\nIf you encounter any difficulties or if there are specific instructions unique to your school portal, please refer to the user manual or contact the school's IT support for further assistance. They will be able to provide personalized guidance based on your school's system.\nIf you have any more questions or need additional assistance, feel free to ask!",
+    "To pay your school fees, please follow these steps:\n1. Log in to your school portal using your credentials.\n2. Navigate to the 'Financial' or 'Payments' section.\n3. Look for the option that says 'Pay School Fees' or something similar.\n4. Select the fees you need to pay and follow the prompts on the screen.\n5. Choose your preferred payment method and provide the necessary details.\n6. Double-check the payment details and submit your payment.\nIf you encounter any issues or have specific instructions for fee payment, refer to the user manual or contact the school's financial office for assistance.\nFeel free to ask if you have more questions or need further guidance!",
+    "Need assistance with anything else? I'm here to help!",
+    "If you have any questions about your courses, fee payments, or need guidance on any other topic, feel free to ask!",
+    "Hello! How may I be of service to you today?",
   ];
 
   const handleInputChange = (e) => {
