@@ -35,6 +35,8 @@ export default {
         40: '#E4E7EC',
         'base': '#98A2B3',
       },
+      'red': {'400' : '#FF0000'},
+      'blue': {'400' : '#102127'},
     },
     extend: {
       backgroundImage: {

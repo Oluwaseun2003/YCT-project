@@ -16,7 +16,7 @@ const Dashboard = ({ setLoggedIn }) => {
         <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
 
         <div className="flex flex-col w-full">
-          <Navbar />
+          <Navbar name="Olufemi" />
 
           <main className="flex">
             <HomeDashboard isExpanded={isExpanded} />

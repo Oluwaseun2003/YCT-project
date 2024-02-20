@@ -18,6 +18,14 @@ import GPAGuardian from './page/GPAGuardian';
 import ClassAdvisor from './page/ClassAdvisor';
 import AcademicCalendar from './page/AcademicCalendar';
 import Results from './page/Results';
+import HallManagement from './page/HallManagment';
+import StudentDetails from './page/StudentDetails';
+import InvigilatorDetails from './page/InvigilatorDetails';
+import SettingsAdmin from './page/SettingsAdmin';
+import AddHall from './page/AddHall';
+import HallAllocation from './page/HallAllocation';
+import SchoolOfTechnology from './page/SchoolOfTechnology';
+import HallAllocate from './page/HallAllocate';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = React.useState(false);
@@ -41,17 +49,25 @@ const App = () => {
         <Route path="/advisor" element={<Advisor />} />
         <Route path="/payments" element={<Payments />} />
         <Route path="/course-registration" element={<CourseRegistration />} />
-        <Route path="/examination" element={<Examination />} />
+        <Route path="/exam-allocation" element={<Examination />} />
         <Route path="/hostel-management" element={<HostelManagement />} />
         <Route path="/result-checker" element={<ResultChecker />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/edit-biodata" element={<EditBioData />} />
         <Route path="/advisor-chatbot" element={<AdvisorChat />} />
-        <Route path="/exam-allocation" element={<ExamAllocation />} />
+        <Route path="/allocation" element={<ExamAllocation />} />
         <Route path="/gpa-guardian" element={<GPAGuardian />} />
         <Route path="/class-advisor" element={<ClassAdvisor />} />
         <Route path="/academic-calendar" element={<AcademicCalendar />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/hall-management" element={<HallManagement />} />
+        <Route path="/student-details" element={<StudentDetails />} />
+        <Route path="/invigilator-details" element={<InvigilatorDetails />} />
+        <Route path="/admin-settings" element={<SettingsAdmin />} />
+        <Route path="/add-hall" element={<AddHall />} />
+        <Route path="/hall-allocation" element={<HallAllocation />} />
+        <Route path="/school-of-technology" element={<SchoolOfTechnology />} />
+        <Route path="/hall-allocate" element={<HallAllocate />} />
       </Routes>
     </Router>
   );

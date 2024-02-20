@@ -2,7 +2,7 @@ import { IoIosNotificationsOutline, IoIosSearch  } from "react-icons/io";
 
 import profilePicture from "../assets/profile picture.jpg";
 
-const Navbar = () => {
+const Navbar = ({ name }) => {
   return (
     <div className="bg-shades-white p-4 px-12 flex justify-between items-center">
       <div className="flex items-center w-[630px] h-12 bg-grey-50 px-4 rounded-xl">
@@ -28,7 +28,7 @@ const Navbar = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <span className="font-bold">Olufemi</span>
+        <span className="font-bold">{name}</span>
       </div>
     </div>
   );

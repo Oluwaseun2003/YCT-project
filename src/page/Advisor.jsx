@@ -13,14 +13,14 @@ const Advisor = ({ setLoggedIn }) => {
       <div className="w-full flex bg-grey-20">
         <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         <div className="flex flex-col w-full">
-          <Navbar />
+        <Navbar name="Olufemi" />
           <main className="flex">
             <div className="w-full">
               <div className="flex flex-col px-12 py-11">
                 <div className="w-full h-[135px] bg-green-200 rounded-2xl flex p-16 items-center ">
                   <div className="flex flex-col">
                     <div className="font-bold text-[32px] text-shades-white mb-2">
-                      Project Advisor
+                      Advisors
                     </div>
                   </div>
                 </div>

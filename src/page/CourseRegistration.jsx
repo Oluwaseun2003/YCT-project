@@ -12,7 +12,7 @@ const CourseRegistration = ({ setLoggedIn }) => {
       <div className="w-full flex bg-grey-20">
         <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         <div className="flex flex-col w-full">
-          <Navbar />
+        <Navbar name="Olufemi" />
           <main className="flex">
             <div className="w-full">
               <div className="flex flex-col px-12 py-11">

@@ -14,7 +14,7 @@ const GPAGuardian = ({ setLoggedIn }) => {
       <div className="w-full flex bg-grey-20">
         <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         <div className="flex flex-col w-full">
-          <Navbar />
+        <Navbar name="Olufemi" />
           <main className="flex">
             <div className="w-full">
               <div className="flex flex-col px-12 py-11">
@@ -26,9 +26,9 @@ const GPAGuardian = ({ setLoggedIn }) => {
                   </div>
                 </div>
               <div className="flex gap-4">
-                  <TotalGPACard label="Average GPA" value="3.456" rating="/4.0" topup="0.45"/>
-                  <TotalGPACard label="Cummulative GPA" value="3.70" rating="/4.0" topup="0.33"/>
-                  <TotalGPACard label="Cummulative CGPA" value="3.80" rating="/4.0" topup="0.18"/>
+                  <TotalGPACard label="Average GPA" value="3.456" rating="/4.0" topup="0.45" showDecimals={true}/>
+                  <TotalGPACard label="Cummulative GPA" value="3.70" rating="/4.0" topup="0.33" showDecimals={true}/>
+                  <TotalGPACard label="Cummulative CGPA" value="3.80" rating="/4.0" topup="0.18" showDecimals={true}/>
                 </div>
                 <h1 className="mt-4 mb-4 font-bold text-[14px]">
                 GPA from Past Semesters Analytics

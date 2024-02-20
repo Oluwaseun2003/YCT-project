@@ -11,7 +11,7 @@ const Settings = ({ setLoggedIn }) => {
       <div className="w-full flex bg-grey-20">
         <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         <div className="flex flex-col w-full">
-          <Navbar />
+        <Navbar name="Olufemi" />
           <main className="flex">
             <div className="w-full">
               <div className="flex flex-col px-12 py-11">
@@ -36,7 +36,7 @@ const Settings = ({ setLoggedIn }) => {
                         <div className="font-bold text-shades-black text-[16px]">
                           personal infomation
                         </div>
-                        <div className="text-[12px]">Oluwafemi oduneye</div>
+                        <div className="text-[12px] text-grey-60">Oluwafemi oduneye</div>
                       </div>
                     </div>
                     <button className="px-4 py-2 rounded-[8px] hover:bg-green-700">
@@ -56,7 +56,7 @@ const Settings = ({ setLoggedIn }) => {
                         <div className="font-bold text-shades-black text-[16px]">
                           Email settings
                         </div>
-                        <div className="text-[12px]">
+                        <div className="text-[12px] text-grey-60">
                           thegabriellsmcpherson@email.com{" "}
                           <span className="bg-[#E7F6EC] px-3 py-2 rounded-full text-green-400 font-semibold">
                             verified
@@ -81,7 +81,7 @@ const Settings = ({ setLoggedIn }) => {
                         <div className="font-bold text-shades-black text-[16px]">
                         Notifications
                         </div>
-                        <div className="text-[12px]">Choose what we get in touch about</div>
+                        <div className="text-[12px] text-grey-60">Choose what we get in touch about</div>
                       </div>
                     </div>
                     <button className="px-4 py-2 rounded-[8px] hover:bg-green-700">
@@ -101,7 +101,7 @@ const Settings = ({ setLoggedIn }) => {
                         <div className="font-bold text-shades-black text-[16px]">
                         Change Password
                         </div>
-                        <input className="text-[12px] bg-none" type="password" placeholder="xxxxxxxxxxxx" />
+                        <input className="text-[12px] bg-transparent" type="password" placeholder="xxxxxxxxxxxx" />
                       </div>
                     </div>
                     <button className="px-4 py-2 rounded-[8px] hover:bg-green-700">
@@ -121,7 +121,7 @@ const Settings = ({ setLoggedIn }) => {
                         <div className="font-bold text-shades-black text-[16px]">
                         2-step verification
                         </div>
-                        <div className="text-[12px]">Manage your 2-step authentication methods</div>
+                        <div className="text-[12px] text-grey-60">Manage your 2-step authentication methods</div>
                       </div>
                     </div>
                     <button className="px-4 py-2 rounded-[8px] hover:bg-green-700">
@@ -141,7 +141,7 @@ const Settings = ({ setLoggedIn }) => {
                         <div className="font-bold text-shades-black text-[16px]">
                         Close your account
                         </div>
-                        <div className="text-[12px]">If you want to stop using Rayna</div>
+                        <div className="text-[12px] text-grey-60">If you want to stop using Rayna</div>
                       </div>
                     </div>
                     <button className="px-4 py-2 rounded-[8px] hover:bg-green-700">

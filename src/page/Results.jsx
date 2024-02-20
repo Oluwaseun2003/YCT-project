@@ -13,7 +13,7 @@ const Results = ({ setLoggedIn }) => {
       <div className="w-full flex bg-grey-20">
         <SideBar isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         <div className="flex flex-col w-full">
-          <Navbar />
+        <Navbar name="Olufemi" />
           <main className="flex">
             <div className="w-full">
               <div className="flex flex-col px-12 py-11">
@@ -31,9 +31,9 @@ const Results = ({ setLoggedIn }) => {
                 </div>
 
                 <div className="flex gap-4 mt-6">
-                  <TotalGPACard label="Cummulative CGPA" value="3.456" rating="/4.0"/>
-                  <TotalGPACard label="Cummulative Total unit(s)" value="23" rating="/30" />
-                  <TotalGPACard label="Cummulative Total point(s)" value="70.50" rating="/100"/>
+                  <TotalGPACard label="Cummulative CGPA" value="3.456" rating="/4.0" showDecimals={true}/>
+                  <TotalGPACard label="Cummulative Total unit(s)" value="23" rating="/30" showDecimals={false}/>
+                  <TotalGPACard label="Cummulative Total point(s)" value="70.50" rating="/100" showDecimals={true}/>
                 </div>
 
                 <h1 className="mt-4 mb-4 font-bold text-[14px]">
