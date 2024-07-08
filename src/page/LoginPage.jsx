@@ -44,6 +44,7 @@ const LoginPage = ({ setLoggedIn }) => {
             <input
               className="border border-[#D0D5DD] rounded-lg relative bg-shades-white p-2 lg:p-4 mt-2"
               type="text"
+              placeholder="F/ND/21/3210073"
               value={matricNumber}
               onChange={(e) => setMatricNumber(e.target.value)}
             />
@@ -54,6 +55,7 @@ const LoginPage = ({ setLoggedIn }) => {
               className="border border-[#D0D5DD] rounded-lg relative bg-shades-white p-2 lg:p-4 mt-2"
               type={showPassword ? "text" : "password"}
               value={password}
+              placeholder="password"
               onChange={(e) => setPassword(e.target.value)}
             />
             <span
